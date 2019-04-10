@@ -1,0 +1,8 @@
+
+<input type="text" [(ngModel)]="gitUrl">
+<button (click)="getResponse()">click for results</button>
+
+<div *ngIf="response">
+  <p>{{response.login}}</p>
+  <p>{{response.id}}</p>
+</div>
